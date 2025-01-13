@@ -51,5 +51,3 @@ output "schema_name" {
 output "warehouse_name" {
   value = snowflake_warehouse.example_wh.name
 }
-
-
