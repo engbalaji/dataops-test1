@@ -10,8 +10,8 @@ terraform {
   }
 }
 provider "snowflake" {
-  account  = "lglosgc-ckb61622"
-  username = "AUTO_USER"
+  account  = "cnclizz-lsb42651"
+  username = "dataopsu1"
   password = "Welcome#77"
   role     = "SYSADMIN"
 }
