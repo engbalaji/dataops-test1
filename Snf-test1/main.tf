@@ -11,7 +11,7 @@ terraform {
 }
 provider "snowflake" {
   account  = "cnclizz-lsb42651"
-  username = "dataopsu1"
+  username = "DATAOPSU1"
   password = "Welcome#77"
   role     = "SYSADMIN"
 }
