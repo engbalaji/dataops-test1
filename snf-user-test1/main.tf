@@ -12,9 +12,9 @@ terraform {
 
 provider "snowflake" {
   account  = "cnclizz-lsb42651"
-  username = "DATAOPSU1"
-  password = "Creative#%1977"
-  role     = "SYSADMIN"
+  username = "ENGBALAJI"
+  password = "Creative#%19771024"
+  role     = "ACCOUNTADMIN"
 }
 
 resource "snowflake_role" "example_role" {
