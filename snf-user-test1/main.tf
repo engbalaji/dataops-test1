@@ -18,26 +18,22 @@ provider "snowflake" {
 }
 
 resource "snowflake_role" "example_role" {
-  name = "example_role"
+  name    = "example_role"
   comment = "This is an example role created via Terraform"
 }
 
 resource "snowflake_user" "example_user" {
-  name       = "dataopsu2"
-  password   = "StrongPassword123!" # Consider using random or secure password management
-  comment    = "Example user created via Terraform"
-  email      = "test@balaji.com" # Optional
-  default_role = snowflake_role.example_role.name
-
-  # Optional: Grant privileges to this user
-  roles = [
-    snowflake_role.example_role.name
-  ]
+  name          = "DATAOPSU2"
+  password      = "StrongPassword123!" # Consider using a secure method to store passwords
+  comment       = "Example user created via Terraform"
+  email         = "example_user@example.com" # Optional
+  default_role  = snowflake_role.example_role.name
 }
 
-resource "snowflake_role_grants" "example_role_grant" {
-  role_name   = snowflake_role.example_role.name
-  users       = [snowflake_user.example_user.name]
+# Grant the role to the user
+resource "snowflake_role_grants" "example_role_grants" {
+  role_name = snowflake_role.example_role.name
+  users     = [snowflake_user.example_user.name]
 }
 
 
