@@ -12,7 +12,7 @@ terraform {
 provider "snowflake" {
   account  = "cnclizz-lsb42651"
   username = "DATAOPSU1"
-  password = "Welcome#77"
+  password = "Creative#%1977"
   role     = "SYSADMIN"
 }
 
