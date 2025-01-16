@@ -18,14 +18,14 @@ provider "snowflake" {
 
 # Create a Snowflake Database
 resource "snowflake_database" "example_db" {
-  name = "BMDB-1"
+  name = "BMDB-2"
   comment = "Database created using Terraform"
 }
 
 # Create a Schema within the Database
 resource "snowflake_schema" "example_schema" {
   database = snowflake_database.example_db.name
-  name     = "EXAMPLE_SCHEMA"
+  name     = "EXAMPLE_SCHEMA2"
   comment  = "Schema created within the example database"
 }
 
