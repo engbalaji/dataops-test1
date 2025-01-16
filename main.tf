@@ -18,7 +18,7 @@ provider "snowflake" {
 
 # Create a Snowflake Database
 resource "snowflake_database" "example_db" {
-  name = "BMDB-2"
+  name = "BMDB-3"
   comment = "Database created using Terraform"
 }
 
